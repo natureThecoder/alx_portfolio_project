@@ -1,8 +1,10 @@
 body {
     width: 100%;
     margin: auto;
-	background-color:azure;
+	background-color:rgb(158, 231, 231);
 }
+
+
 
 /** Navbar**/
 #menu {
@@ -61,7 +63,9 @@ body {
 	font-size: 1.6em;
 	content: "\2261"; 
 	margin-left: 20px;
-}/**
+}
+
+/**
 #menu ul.sub-menus{
 	height: auto;
 	overflow: hidden;
@@ -102,4 +106,33 @@ body {
 
 .container {
     text-align: center;  
+	
+	
 }
+
+.container h1 {
+	color: #ffffff;
+	font-family: Verdana;
+}
+
+.container h2 {
+	color: #0099CC;
+	font-family: Verdana;
+	text-decoration: underline;
+}
+.container .flex{
+	font-size: 18px;
+	border: 1px solid #000;
+	padding: 20px;
+	margin: 30px;
+	bottom: 50%;
+	border-radius: 12px;	
+}
+
+.container-1 {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 80%;
+	margin: auto;
+}
+
