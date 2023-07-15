@@ -14,10 +14,18 @@ body {
 	padding-left: 18px;
 	border-radius: 10px;
 }
+
+
 #menu ul, #menu li {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none
+}
+.menu ul, .menu li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
 }
 #menu ul {
 	width: 100%;
@@ -27,6 +35,7 @@ body {
 	display: inline;
 	position: relative;
 }
+
 #menu a {
 	display: block;
 	line-height: 45px;
@@ -91,18 +100,14 @@ body {
 	color: #444444;
 }**/
     
-    @media screen and (max-width: 800px){
-	#menu {position:relative}
-	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:30px;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:white}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
-}
+    @media (max-width: 768px){
+	#menu{
+		background: rgba(49, 5, 181, 0.6);
+	}
+	body{
+		background-color: rgba(151, 151, 246, 0.75);
+	}
+}			
 
 .container {
     text-align: center;  
@@ -136,3 +141,11 @@ body {
 	margin: auto;
 }
 
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+	background-color: #FFFFFF;
+}
