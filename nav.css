@@ -1,7 +1,8 @@
 body {
     width: 100%;
-    margin: auto;
+    margin: none;
 	background-color:rgb(158, 231, 231);
+	height: 80vh;
 }
 
 
@@ -122,15 +123,15 @@ body {
 }
 
 .container h1 {
-	color: #ffffff;
-	font-family: Verdana;
+	font-family: Verdana, Tahoma;
+	color: rgb(79, 71, 71);
 }
 
 .container h2 {
-	color: #0099CC;
-	font-family: Verdana;
-	text-decoration: underline;
+	font-family: Verdana, Tahoma;
+	color: rgb(79, 71, 71);
 }
+
 .container .flex{
 	font-size: 18px;
 	border: 1px solid #000;
@@ -143,9 +144,13 @@ body {
 .container-1 {
 	display: flex;
 	flex-direction: row-reverse;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
+.container-1 .card {
+	font-size: 17px;
+}
+
 
 section{
 	display: flex;
@@ -154,4 +159,38 @@ section{
 	align-items: center;
 	margin-top: 25px;
 	background-color: #FFFFFF;
+}
+
+/**Button **/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 18px;
+color: #fff;
+background-color: #0099CC;
+padding: 10px 40px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 60px;
+transition : 1000ms;
+transform: translateY(0);
+flex-direction:row;
+align-items: center;
+cursor: pointer;
+}
+
+.btn:hover{
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #f6f6f7;
+border: solid 1px #0066cc;
+}
+  
+a {
+	text-decoration: none;
 }
