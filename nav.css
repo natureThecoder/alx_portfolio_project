@@ -100,19 +100,25 @@ body {
 	color: #444444;
 }**/
     
-    @media (max-width: 768px){
-	#menu{
-		background: rgba(49, 5, 181, 0.6);
-	}
+  @media only screen and (max-width: 767px) {
+		#menu {
+			display: block;
+			overflow: hidden;
+			height: 80%;
+			width: 100%;
+			position: relative;
+			
+		}
+	
 	body{
 		background-color: rgba(151, 151, 246, 0.75);
 	}
-}			
+}	
+		
+
 
 .container {
     text-align: center;  
-	
-	
 }
 
 .container h1 {
@@ -137,7 +143,7 @@ body {
 .container-1 {
 	display: flex;
 	flex-direction: row-reverse;
-	width: 80%;
+	width: 70%;
 	margin: auto;
 }
 
