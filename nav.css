@@ -1,6 +1,6 @@
 body {
-    width: 100%;
-    margin: none;
+    	width: 100%;
+    	margin: none;
 	background-color:rgb(158, 231, 231);
 	height: 80vh;
 }
@@ -101,18 +101,26 @@ body {
 	color: #444444;
 }**/
     
-  @media only screen and (max-width: 767px) {
-		#menu {
-			display: block;
-			overflow: hidden;
-			height: 80%;
-			width: 100%;
-			position: relative;
+@media only screen and (max-width: 767px) {
+	#menu {
+		display: block;
+		overflow: hidden;
+		height: 80%;
+		width: 100%;
+		position: relative;
 			
-		}
+	}
 	
-	body{
+	body {
 		background-color: rgba(151, 151, 246, 0.75);
+	}
+	.container-1 {
+		overflow:auto;
+		direction: rtl;
+	}
+	.footer {
+		position: relative;
+  		left: 35%;
 	}
 }	
 		
@@ -199,5 +207,5 @@ footer{
 	text-align: center;
 	font-size: 16px;
  	position: absolute;
-	right: 44%;
+	right: 40%;
 }
